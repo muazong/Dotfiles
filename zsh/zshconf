@@ -6,6 +6,8 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export LANG=en_US.UTF-8
+export VISUAL=nvim;
+export EDITOR=nvim;
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 export PATH=~/.nvm/versions/node/v21.7.1/bin:$PATH
 export NVM_DIR=~/.nvm
