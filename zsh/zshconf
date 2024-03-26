@@ -7,6 +7,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export LANG=en_US.UTF-8
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+export PATH=~/.nvm/versions/node/v21.7.1/bin:$PATH
+export NVM_DIR=~/.nvm
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
+ENABLE_CORRECTION="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # __PLUGINS__
@@ -21,8 +27,6 @@ plugins=(
 )
 
 # nvm
-export PATH=~/.nvm/versions/node/v21.7.1/bin:$PATH
-export NVM_DIR=~/.nvm
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
 
 # Colorls
