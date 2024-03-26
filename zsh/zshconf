@@ -60,8 +60,8 @@ alias autoremove='sudo nala autoremove'
 alias uu='sudo nala update && sudo nala upgrade'
 
 # Zsh
-alias zshconf='nvim ~/.config/zsh/zshconf'
-alias zshsource='source ~/.config/zsh/zshconf'
+alias zshconf='nvim ~/.Dotfiles/zsh/zshconf'
+alias zshsource='source ~/.Dotfiles/zsh/zshconf'
 
 # Neovim
 alias v='nvim'
@@ -69,18 +69,19 @@ alias n='nvim'
 alias nv='nvim'
 alias vim='nvim --clean'
 alias vi='nvim --clean'
-alias nvc='cd ~/.config/nvim && nvim init.lua'
+alias nvc='cd ~/.Dotfiles/nvim && nvim init.lua'
 
 # Tmux
 alias tm='tmux'
 alias t='tmux attach'
+alias tmc='cd ~/.Dotfiles/tmux && nvim tmux.conf'
 
 # Neofetch
 alias neo='neofetch'
-alias neoconf='nvim ~/.config/neofetch/config.conf'
+alias neoconf='nvim ~/.Dotfiles/neofetch/config.conf'
 
 # Kitty terminal
-alias kittyconf='nvim ~/.config/kitty/kitty.conf'
+alias kittyconf='nvim ~/.Dotfiles/kitty/kitty.conf'
 
 # Colorls
 alias ls='colorls'
