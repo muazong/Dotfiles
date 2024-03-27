@@ -257,3 +257,4 @@
   - Autocompletion: [nvim-cmp](https://github.com/hrsh7th/nvim-cmp/releases) `hrsh7th/nvim-cmp`
   - Formatting and Linting: [None-ls.nvim](https://github.com/nvimtools/none-ls.nvim) `nvimtools/none-ls.nvim`
   - VS-Code icons: [Lspkind.nvim](https://github.com/onsails/lspkind.nvim) `onsails/lspkind.nvim`
+  - etc
