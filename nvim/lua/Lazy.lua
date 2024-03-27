@@ -39,7 +39,7 @@ require("lazy").setup({
 		{ "echasnovski/mini.nvim", event = "VimEnter", version = "*" }, -- Useful Mini library
 	},
 	{ -- NOTE: CONFIGURATION REQUIREMENTS
-		{ "rebelot/kanagawa.nvim", lazy = false, priority = 1000 }, -- Colorscheme
+		{ "rebelot/kanagawa.nvim", lazy = false, priority = 1000 }, -- Colorschemelazy
 		{ "rmagatti/alternate-toggler", event = "VeryLazy" }, -- Toggling alternate 'boolean' values
 		{
 			"echasnovski/mini.indentscope", -- Indent scope

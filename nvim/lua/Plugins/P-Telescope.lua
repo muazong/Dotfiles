@@ -11,6 +11,10 @@ map("n", "<C-g>", "<CMD>Telescope live_grep<CR>", opts)
 map("n", "<C-b>", "<CMD>:Telescope file_browser<CR>", opts)
 map("n", "?", "<CMD>:Telescope help_tags<CR>", opts)
 
+map("n", "<A-f>", "<CMD>Telescope find_files<CR>", opts)
+map("n", "<A-g>", "<CMD>Telescope live_grep<CR>", opts)
+map("n", "<A-b>", "<CMD>:Telescope file_browser<CR>", opts)
+
 telescope.setup({
 	-- Defaults
 	defaults = {

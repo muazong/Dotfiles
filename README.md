@@ -242,4 +242,18 @@
 
 - Plugin Manager: [Lazy.nvim](https://github.com/folke/lazy.nvim)
 - Plugins:
-  - Colorscheme: [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
+  - Colorscheme: [Kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) `rebelot/kanagawa.nvim`
+  - Icon: [Devicons](https://github.com/nvim-tree/nvim-web-devicons) `nvim-tree/nvim-web-devicons`
+  - Highlight color: [Nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors) `brenoprata10/nvim-highlight-colors`
+  - File search: [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) `nvim-telescope/telescope.nvim`
+  - File tree: [Neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) `nvim-neo-tree/neo-tree.nvim`
+  - Buffer manager: [Bufferline.nvim](https://github.com/akinsho/bufferline.nvim) `akinsho/bufferline.nvim`
+  - Status line: [Lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) `nvim-lualine/lualine.nvim`
+  - Terminal: [Toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) `akinsho/toggleterm.nvim`
+  - Code syntax: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) `nvim-treesitter/nvim-treesitter`
+  - Git: [Gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) `lewis6991/gitsigns.nvim`
+  - LSP manager: [Mason.nvim](https://github.com/williamboman/mason.nvim) `williamboman/mason.nvim`
+  - LSP configuration: [Nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) `neovim/nvim-lspconfig`
+  - Autocompletion: [nvim-cmp](https://github.com/hrsh7th/nvim-cmp/releases) `hrsh7th/nvim-cmp`
+  - Formatting and Linting: [None-ls.nvim](https://github.com/nvimtools/none-ls.nvim) `nvimtools/none-ls.nvim`
+  - VS-Code icons: [Lspkind.nvim](https://github.com/onsails/lspkind.nvim) `onsails/lspkind.nvim`
