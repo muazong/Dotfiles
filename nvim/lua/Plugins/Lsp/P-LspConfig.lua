@@ -11,7 +11,7 @@ local on_attach = function(client, bufnr)
 	-- map("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
 	map("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
 	map("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
-	-- map("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
+	map("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
 	-- map("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
 	map("n", "<leader>d", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
 	-- map("n", "<leader>D", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
