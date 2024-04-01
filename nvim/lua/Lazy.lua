@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	{ -- NOTE: NO CONFIGURATION REQUIRED
-		{ "brenoprata10/nvim-highlight-colors", lazy = false, opts = {} }, -- Highlight color
+		{ "NvChad/nvim-colorizer.lua", lazy = false }, -- Highlight color
 		{ "MunifTanjim/nui.nvim", event = "VimEnter" }, -- Vim UI
 		{ "ethanholz/nvim-lastplace", lazy = false, opts = {} }, -- Back to where you exited
 		{ "numToStr/Comment.nvim", lazy = false, opts = {} }, -- Quick comment
