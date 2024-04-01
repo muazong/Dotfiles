@@ -1,23 +1,12 @@
-local lspconfig_status, lspconfig = pcall(require, "lspconfig")
-if not lspconfig_status then
-	return
-end
-
-local cmp_nvim_lsp_status, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-if not cmp_nvim_lsp_status then
-	return
-end
-
-local typescript_setup, typescript = pcall(require, "typescript")
-if not typescript_setup then
-	return
-end
+local lspconfig = require("lspconfig")
+local cmp_nvim_lsp = require("cmp_nvim_lsp")
+local typescript = require("typescript")
+local capabilities = cmp_nvim_lsp.default_capabilities()
 
 local map = vim.keymap.set
 
 local on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true, buffer = bufnr }
-
 	map("n", "gf", "<cmd>Lspsaga finder<CR>", opts) -- show definition, references
 	-- map("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
 	map("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
@@ -37,8 +26,6 @@ local on_attach = function(client, bufnr)
 		map("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables
 	end
 end
-
-local capabilities = cmp_nvim_lsp.default_capabilities()
 
 lspconfig["clangd"].setup({
 	capabilities = capabilities,
