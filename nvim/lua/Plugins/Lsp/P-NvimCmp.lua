@@ -37,6 +37,16 @@ cmp.setup({
 	mapping = cmp.mapping.preset.insert({
 		["<S-Tab>"] = cmp.mapping.select_prev_item(), -- previous suggestion
 		["<Tab>"] = cmp.mapping.select_next_item(), -- next suggestion
+		["<C-j>"] = cmp.mapping.select_next_item(),
+		["<C-k>"] = cmp.mapping.select_prev_item(),
+
+		["<C-l>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				return cmp.complete_common_string()
+			end
+			fallback()
+		end, { "i", "c" }),
+
 		["<C-u>"] = cmp.mapping.scroll_docs(-4),
 		["<C-d>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
