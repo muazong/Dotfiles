@@ -244,7 +244,7 @@
 - Plugins:
   - Colorscheme: [Kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) `rebelot/kanagawa.nvim`
   - Icon: [Devicons](https://github.com/nvim-tree/nvim-web-devicons) `nvim-tree/nvim-web-devicons`
-  - Highlight color: [Nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors) `brenoprata10/nvim-highlight-colors`
+  - Highlight color: [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua) `NvChad/nvim-colorizer.lua`
   - File search: [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) `nvim-telescope/telescope.nvim`
   - File tree: [Neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) `nvim-neo-tree/neo-tree.nvim`
   - Buffer manager: [Bufferline.nvim](https://github.com/akinsho/bufferline.nvim) `akinsho/bufferline.nvim`

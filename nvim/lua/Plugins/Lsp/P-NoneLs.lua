@@ -19,7 +19,7 @@ null_ls.setup({
 		diagnostics.tidy, -- html
 
 		-- completion
-		completion.spell,
+		-- completion.spell,
 	},
 
 	-- configure format on save
