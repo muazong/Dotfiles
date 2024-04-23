@@ -71,7 +71,7 @@ require("lazy").setup({
 			},
 		},
 		{ "nvim-neo-tree/neo-tree.nvim", lazy = false }, -- Tree files
-		{ "akinsho/bufferline.nvim", lazy = false, version = "*" }, -- Tab line
+		{ "akinsho/bufferline.nvim", lazy = false }, -- Tab line
 		{ "b0o/incline.nvim", lazy = false }, -- Floating statuslines
 		{ "nvim-lualine/lualine.nvim", lazy = false }, -- Status line
 		{ "folke/noice.nvim", event = "VeryLazy" }, -- Command line UI
