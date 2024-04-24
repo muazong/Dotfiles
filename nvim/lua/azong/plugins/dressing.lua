@@ -1,5 +1,6 @@
 return {
-  "stevearc/dressing.nvim", lazy = false,
+  "stevearc/dressing.nvim",
+  lazy = false,
   opts = {
     input = {
       enabled = true,
@@ -67,5 +68,5 @@ return {
       },
       get_config = nil,
     },
-  }
+  },
 }

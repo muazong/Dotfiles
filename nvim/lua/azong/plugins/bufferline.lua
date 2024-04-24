@@ -1,6 +1,7 @@
 return {
-  "akinsho/bufferline.nvim", lazy = false,
-  config = function() 
+  "akinsho/bufferline.nvim",
+  lazy = false,
+  config = function()
     vim.keymap.set("n", "<Leader>p", "<Cmd> BufferLineTogglePin<CR>", { noremap = true, silent = true })
 
     require("bufferline").setup({
@@ -112,5 +113,5 @@ return {
         },
       },
     })
-  end
+  end,
 }

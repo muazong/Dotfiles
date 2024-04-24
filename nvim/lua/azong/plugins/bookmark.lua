@@ -11,5 +11,5 @@ return {
 
     map("n", "ma", "<Cmd> lua require('telescope').extensions.vim_bookmarks.all() <CR>")
     map("n", "mc", "<Cmd> lua require('telescope').extensions.vim_bookmarks.current_file() <CR>")
-  end
+  end,
 }

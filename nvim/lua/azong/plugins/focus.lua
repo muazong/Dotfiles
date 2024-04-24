@@ -1,5 +1,5 @@
 return {
- "nvim-focus/focus.nvim",
+  "nvim-focus/focus.nvim",
   event = "VimEnter",
   version = "*",
   config = function()
@@ -64,5 +64,5 @@ return {
         winhighlight = false,
       },
     })
-  end
+  end,
 }

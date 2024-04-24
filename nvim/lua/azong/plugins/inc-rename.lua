@@ -1,5 +1,6 @@
 return {
-  "smjonas/inc-rename.nvim", event = "InsertEnter",
+  "smjonas/inc-rename.nvim",
+  event = "InsertEnter",
   config = function()
     vim.keymap.set("n", "<leader>rn", function()
       return ":IncRename " .. vim.fn.expand("<cword>")
@@ -13,5 +14,5 @@ return {
       show_message = true,
       post_hook = nil,
     })
-  end
+  end,
 }

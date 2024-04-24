@@ -3,7 +3,7 @@ return {
   version = "*",
   lazy = false,
   dependencies = {
-    "echasnovski/mini.nvim"
+    "echasnovski/mini.nvim",
   },
   opts = {
     cursor = {
@@ -21,5 +21,5 @@ return {
     close = {
       enable = false,
     },
-  }
+  },
 }

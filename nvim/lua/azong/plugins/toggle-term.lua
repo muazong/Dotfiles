@@ -1,5 +1,6 @@
 return {
-   "akinsho/toggleterm.nvim", version = "*",
+  "akinsho/toggleterm.nvim",
+  version = "*",
 
   config = function()
     vim.cmd([[ 
@@ -30,5 +31,5 @@ return {
         zindex = 100,
       },
     })
-  end
+  end,
 }

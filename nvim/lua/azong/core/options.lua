@@ -122,12 +122,12 @@ opts.splitbelow = true
 
 -- Fill chars
 opts.fillchars = {
-	foldopen = "",
-	foldclose = "",
-	fold = " ",
-	foldsep = " ",
-	diff = "╱",
-	eob = " ",
+  foldopen = "",
+  foldclose = "",
+  fold = " ",
+  foldsep = " ",
+  diff = "╱",
+  eob = " ",
 }
 
 -- Explorer
@@ -155,21 +155,19 @@ vim.cmd([[
 
 -- Highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
-	callback = function()
-		vim.highlight.on_yank({
-			higroup = "IncSearch",
-			timeout = 200,
-		})
-	end,
+  callback = function()
+    vim.highlight.on_yank({
+      higroup = "IncSearch",
+      timeout = 200,
+    })
+  end,
 })
 
 -- Resize splits if window got resized
 vim.api.nvim_create_autocmd({ "VimResized" }, {
-	callback = function()
-		local current_tab = vim.fn.tabpagenr()
-		vim.cmd("tabdo wincmd =")
-		vim.cmd("tabnext " .. current_tab)
-	end,
+  callback = function()
+    local current_tab = vim.fn.tabpagenr()
+    vim.cmd("tabdo wincmd =")
+    vim.cmd("tabnext " .. current_tab)
+  end,
 })
-
-

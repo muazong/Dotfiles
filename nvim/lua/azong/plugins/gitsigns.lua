@@ -1,5 +1,6 @@
 return {
-  "lewis6991/gitsigns.nvim", event = { "BufReadPre", "BufNewFile" },
+  "lewis6991/gitsigns.nvim",
+  event = { "BufReadPre", "BufNewFile" },
   opts = {
     signs = {
       add = { text = "│" },
@@ -79,5 +80,5 @@ return {
       map("n", "<leader>hd", gs.diffthis)
       map("n", "<leader>td", gs.toggle_deleted)
     end,
-  }
+  },
 }

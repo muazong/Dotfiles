@@ -1,11 +1,11 @@
 return {
-  "NvChad/nvim-colorizer.lua", 
+  "NvChad/nvim-colorizer.lua",
   priority = 500,
   lazy = false,
 
   config = function()
     require("colorizer").setup({
-      filetypes = { '*' },
+      filetypes = { "*" },
       user_default_options = {
         RGB = true,
         RRGGBB = true,
@@ -23,5 +23,5 @@ return {
         always_update = true,
       },
     })
-  end
+  end,
 }

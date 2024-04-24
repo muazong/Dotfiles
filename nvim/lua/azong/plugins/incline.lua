@@ -1,5 +1,6 @@
 return {
-  "b0o/incline.nvim", lazy = false,
+  "b0o/incline.nvim",
+  lazy = false,
   opts = {
     debounce_threshold = {
       falling = 50,
@@ -60,5 +61,5 @@ return {
       },
       zindex = 50,
     },
-  }
+  },
 }

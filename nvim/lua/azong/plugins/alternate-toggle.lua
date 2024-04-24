@@ -1,5 +1,6 @@
 return {
-  "rmagatti/alternate-toggler", event = "BufReadPre",
+  "rmagatti/alternate-toggler",
+  event = "BufReadPre",
   config = function()
     vim.keymap.set("n", "<Leader><Leader>", "<Cmd>ToggleAlternate<CR>")
     require("alternate-toggler").setup({
@@ -11,5 +12,5 @@ return {
         ["1"] = "0",
       },
     })
-  end
+  end,
 }

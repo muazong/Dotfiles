@@ -1,5 +1,6 @@
 return {
-  "nvim-neo-tree/neo-tree.nvim", lazy = false,
+  "nvim-neo-tree/neo-tree.nvim",
+  lazy = false,
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     vim.keymap.set(
@@ -236,5 +237,5 @@ return {
         },
       },
     })
-  end
+  end,
 }
