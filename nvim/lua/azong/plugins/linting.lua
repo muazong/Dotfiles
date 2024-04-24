@@ -6,6 +6,7 @@ return {
 
     lint.linters_by_ft = {
       html = { "tidy" },
+      markdown = { "markdownlint" },
     }
 
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
