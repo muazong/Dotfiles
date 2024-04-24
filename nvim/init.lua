@@ -1,2 +1,2 @@
-require('azong.core')
-require('azong.lazy')
+require("azong.core")
+require("azong.lazy")
