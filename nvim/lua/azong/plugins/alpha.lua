@@ -8,7 +8,6 @@ return {
     -- Set header
     dashboard.section.header.val = {
       "                                                     ",
-      "                                                     ",
       "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
       "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
       "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
@@ -26,6 +25,9 @@ return {
       dashboard.button("g", "  -> Find Word", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("q", "  -> Quit", "<cmd>qa<CR>"),
     }
+
+    -- Set footer
+    dashboard.section.footer.val = { "  Nvim 0.10.0 " }
 
     -- Send config to alpha
     alpha.setup(dashboard.opts)
