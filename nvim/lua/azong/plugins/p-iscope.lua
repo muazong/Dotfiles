@@ -1,7 +1,7 @@
 return {
   "echasnovski/mini.indentscope",
-  lazy = false,
   version = "*",
+  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "echasnovski/mini.nvim",
   },

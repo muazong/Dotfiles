@@ -1,16 +1,38 @@
 return {
-  -- Useful libraries
+  "nvim-lua/plenary.nvim",
+  "echasnovski/mini.nvim",
   {
-    "nvim-lua/plenary.nvim",
-    "echasnovski/mini.nvim",
-    version = "*",
+    "MunifTanjim/nui.nvim",
+    event = "VimEnter",
   },
   {
-    "AndrewRadev/tagalong.vim", -- Auto rename tag
+    "AndrewRadev/tagalong.vim",
     ft = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
   },
-  "MunifTanjim/nui.nvim",
-  event = "VimEnter", -- VIM UI
-  "ethanholz/nvim-lastplace",
-  lazy = false, -- Back where you exited
+  {
+    'alvan/vim-closetag',
+    ft = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
+  },
+  {
+    "kylechui/nvim-surround",
+    event = { "BufReadPre", "BufNewFile" },
+    config = true,
+  },
+  {
+    "axelvc/template-string.nvim",
+    ft = { "js", "jsx", "javascript", "ts", "tsx", "typescript" },
+    config = true,
+  },
+  {
+    "folke/todo-comments.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = true,
+  },
+  {
+    "mbbill/undotree",
+    event = "BufReadPre",
+    config = function()
+      vim.keymap.set("n", "<Leader>u", vim.cmd.UndotreeToggle)
+    end,
+  }
 }

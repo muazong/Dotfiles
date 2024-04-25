@@ -103,7 +103,7 @@ opts.foldcolumn = "0"
 opts.cmdheight = 1
 opts.showcmd = true
 opts.showmode = true
-opts.showtabline = 3
+opts.showtabline = 0
 opts.laststatus = 3
 opts.wildmode = "longest:full,full"
 

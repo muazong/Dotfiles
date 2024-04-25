@@ -1,2 +1,2 @@
-require('azong.core.options')
-require('azong.core.keymaps')
+require("azong.core.options")
+require("azong.core.keymaps")

@@ -1,6 +1,5 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  lazy = false,
   build = ":TSUpdate",
   event = { "BufReadPre", "BufNewFile" },
 
@@ -8,10 +7,12 @@ return {
     require("nvim-treesitter.configs").setup({
       ensure_installed = {
         "lua",
+        "luadoc",
         "vim",
         "vimdoc",
         "javascript",
         "typescript",
+        "php",
         "bash",
         "json",
         "cpp",
@@ -19,6 +20,7 @@ return {
         "markdown_inline",
         "regex",
         "gitignore",
+        "git_config",
       },
       sync_install = false,
       auto_install = true,
@@ -26,13 +28,6 @@ return {
       highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,
-      },
-      autotag = {
-        enable = true,
-        enable_rename = true,
-        enable_close = true,
-        enable_close_on_slash = true,
-        filetypes = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
       },
       indent = {
         enable = true,

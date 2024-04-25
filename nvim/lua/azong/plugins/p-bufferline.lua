@@ -1,6 +1,7 @@
 return {
   "akinsho/bufferline.nvim",
-  lazy = false,
+  event = { "BufReadPre", "BufNewFile" },
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     vim.keymap.set("n", "<Leader>p", "<Cmd> BufferLineTogglePin<CR>", { noremap = true, silent = true })
 
@@ -115,3 +116,4 @@ return {
     })
   end,
 }
+

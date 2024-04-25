@@ -1,7 +1,8 @@
 return {
   "nvim-focus/focus.nvim",
-  event = "VimEnter",
   version = "*",
+  event = { "BufReadPre", "BufNewFile" },
+
   config = function()
     local ignore_filetypes = { "neo-tree", "sagaoutline", "lazy" }
     local ignore_buftypes = { "nofile", "prompt", "popup" }

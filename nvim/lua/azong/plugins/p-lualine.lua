@@ -1,6 +1,8 @@
 return {
   "nvim-lualine/lualine.nvim",
-  lazy = false,
+  event = { "BufReadPre", "BufNewFile" },
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+
   config = function()
     local colors = {
       sumiInk1 = "#1F1F28",

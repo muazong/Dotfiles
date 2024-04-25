@@ -1,6 +1,6 @@
 return {
   "b0o/incline.nvim",
-  lazy = false,
+  event = { "BufReadPre", "BufNewFile" },
   opts = {
     debounce_threshold = {
       falling = 50,

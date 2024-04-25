@@ -1,6 +1,6 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  lazy = false,
+  event = "VimEnter",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     vim.keymap.set(

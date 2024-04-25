@@ -33,8 +33,8 @@ return {
         end,
       },
       mapping = cmp.mapping.preset.insert({
-        ["<S-Tab>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-        ["<Tab>"] = cmp.mapping.select_next_item(), -- next suggestion
+        ["<S-Tab>"] = cmp.mapping.select_prev_item(),
+        ["<Tab>"] = cmp.mapping.select_next_item(),
         ["<C-j>"] = cmp.mapping.select_next_item(),
         ["<C-k>"] = cmp.mapping.select_prev_item(),
 
@@ -47,10 +47,10 @@ return {
 
         ["<C-u>"] = cmp.mapping.scroll_docs(-4),
         ["<C-d>"] = cmp.mapping.scroll_docs(4),
-        ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-        ["<C-e>"] = cmp.mapping.abort(), -- close completion window
+        ["<C-Space>"] = cmp.mapping.complete(),
+        ["<C-e>"] = cmp.mapping.abort(),
         ["<CR>"] = cmp.mapping.confirm({
-          -- behavior = cmp.ConfirmBehavior.Replace,
+          behavior = cmp.ConfirmBehavior.Replace,
           select = true,
         }),
       }),

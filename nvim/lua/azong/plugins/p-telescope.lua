@@ -4,6 +4,8 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
+  "MattesGroeger/vim-bookmarks",
+    "tom-anders/telescope-vim-bookmarks.nvim",
     "nvim-telescope/telescope-file-browser.nvim",
   },
 
