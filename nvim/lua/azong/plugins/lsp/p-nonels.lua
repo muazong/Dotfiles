@@ -11,13 +11,13 @@ return {
 		null_ls.setup({
 			sources = {
 				-- formatting
-				--[[ formatting.prettier,
+				formatting.prettier,
 				formatting.prettierd,
 				formatting.stylua,
-				formatting.clang_format, ]]
+				-- formatting.clang_format,
 
 				-- linter
-				--[[ diagnostics.tidy, -- html ]]
+				diagnostics.tidy, -- html
 
 				-- completion
 				--[[ completion.spell, ]]
