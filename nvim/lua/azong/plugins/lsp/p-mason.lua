@@ -16,17 +16,18 @@ return {
 					package_pending = "➜",
 					package_uninstalled = "✗",
 				},
-      },
+			},
 		})
 
-		--[[ mason_lspconfig.setup({
+		mason_lspconfig.setup({
 			ensure_installed = {
 				"tsserver",
 				"html",
 				"cssls",
 				"lua_ls",
 				"emmet_ls",
-				"typos_lsp"
+				"typos_lsp",
+				"clangd",
 			},
 		})
 
@@ -36,6 +37,6 @@ return {
 				"prettierd",
 				"stylua",
 			},
-		}) ]]
+		})
 	end,
 }

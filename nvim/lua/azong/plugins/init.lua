@@ -10,7 +10,7 @@ return {
     ft = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
   },
   {
-    'alvan/vim-closetag',
+    "alvan/vim-closetag",
     ft = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
   },
   {
@@ -34,5 +34,5 @@ return {
     config = function()
       vim.keymap.set("n", "<Leader>u", vim.cmd.UndotreeToggle)
     end,
-  }
+  },
 }

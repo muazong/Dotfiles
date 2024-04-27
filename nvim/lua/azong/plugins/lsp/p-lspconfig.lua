@@ -56,67 +56,62 @@ return {
 					on_attach = on_attach,
 				})
 			end,
-		})
 
-		--[[ lspconfig["clangd"].setup({
+			["clangd"] = function()
+				lspconfig["clangd"].setup({
 					capabilities = capabilities,
 					on_attach = on_attach,
 					offset_encoding = "utf-8",
 					sync_kind = 2,
-				}) ]]
+					filetypes = { "cpp", "c" },
+				})
+			end,
 
-		--[[ lspconfig["lua_ls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			settings = {
-				Lua = {
-					diagnostics = {
-						globals = { "vim" },
-					},
-					workspace = {
-						library = {
-							[vim.fn.expand("$VIMRUNTIME/lua")] = true,
-							[vim.fn.stdpath("config") .. "/lua"] = true,
+			["lua_ls"] = function()
+				lspconfig["lua_ls"].setup({
+					capabilities = capabilities,
+					on_attach = on_attach,
+					settings = {
+						Lua = {
+							diagnostics = {
+								globals = { "vim" },
+							},
+							workspace = {
+								library = {
+									[vim.fn.expand("$VIMRUNTIME/lua")] = true,
+									[vim.fn.stdpath("config") .. "/lua"] = true,
+								},
+							},
 						},
 					},
-				},
-			},
-		}) ]]
+					filetypes = { "lua" },
+				})
+			end,
 
-		lspconfig["emmet_ls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			filetypes = {
-				"html",
-				"typescriptreact",
-				"javascriptreact",
-				"css",
-				"sass",
-				"scss",
-				"less",
-				"svelte",
-			},
-		})
+			["emmet_ls"] = function()
+				lspconfig["emmet_ls"].setup({
+					capabilities = capabilities,
+					on_attach = on_attach,
+					filetypes = {
+						"html",
+						"typescriptreact",
+						"javascriptreact",
+						"css",
+						"sass",
+						"scss",
+						"less",
+						"svelte",
+					},
+				})
+			end,
 
-		lspconfig["jsonls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			filetypes = { "json" },
-		})
-
-		lspconfig["html"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		lspconfig["cssls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		lspconfig["tsserver"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
+			["jsonls"] = function()
+				lspconfig["jsonls"].setup({
+					capabilities = capabilities,
+					on_attach = on_attach,
+					filetypes = { "json" },
+				})
+			end,
 		})
 	end,
 }

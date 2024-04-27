@@ -24,7 +24,7 @@ return {
       },
       sync_install = false,
       auto_install = true,
-      ignore_install = { "css", "tmux" },
+      ignore_install = { "html", "css", "tmux" },
       highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,

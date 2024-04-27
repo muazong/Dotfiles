@@ -9,7 +9,6 @@ return {
       options = {
         sort_by = "id",
         separator_style = "slant",
-
         show_close_icon = false,
         show_tab_indicators = false,
         enforce_regular_tabs = false,
@@ -17,23 +16,18 @@ return {
         show_buffer_close_icons = false,
         diagnostics = "nvim_lsp",
         diagnostics_update_in_insert = true,
-
         offsets = {
-          {
-            filetype = "neo-tree",
-            text = "󱏒 File Explorer",
-            text_align = "center",
-            highlight = "Directory",
-            separator = true,
-          },
+          filetype = "neo-tree",
+          text = "󱏒 File Explorer",
+          text_align = "center",
+          highlight = "Directory",
+          separator = true,
         },
-
         groups = {
           items = {
             require("bufferline.groups").builtin.pinned:with({ icon = " " }),
           },
         },
-
         custom_areas = {
           right = function()
             local result = {}
@@ -61,7 +55,6 @@ return {
             return result
           end,
         },
-
         ---@diagnostic disable-next-line: unused-local
         diagnostics_indicator = function(count, level, diagnostics_dict, context)
           if context.buffer:current() then
@@ -116,4 +109,3 @@ return {
     })
   end,
 }
-
