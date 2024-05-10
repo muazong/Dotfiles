@@ -101,7 +101,7 @@ opts.foldcolumn = "0"
 
 -- Status
 opts.cmdheight = 1
-opts.showcmd = true
+opts.showcmd = false
 opts.showmode = true
 opts.showtabline = 0
 opts.laststatus = 3

@@ -1,5 +1,5 @@
 return {
-  --[[ "folke/noice.nvim",
+  "folke/noice.nvim",
   event = "VimEnter",
   opts = {
     views = {
@@ -57,5 +57,5 @@ return {
         help = { pattern = "^:%s*he?l?p?%s+", icon = "󰋖" },
       },
     },
-  }, ]]
+  },
 }
