@@ -9,7 +9,6 @@ export LANG=en_US.UTF-8
 export VISUAL=nvim;
 export EDITOR=nvim;
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
-export PATH=~/.nvm/versions/node/v22.0.0/bin:$PATH
 export NVM_DIR=~/.nvm
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
