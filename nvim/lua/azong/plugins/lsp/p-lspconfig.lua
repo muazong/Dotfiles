@@ -4,7 +4,6 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     "williamboman/mason-lspconfig.nvim",
-    "hrsh7th/cmp-nvim-lsp-signature-help",
     { "antosha417/nvim-lsp-file-operations", config = true },
   },
 

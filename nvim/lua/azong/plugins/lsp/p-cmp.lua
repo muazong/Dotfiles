@@ -11,8 +11,12 @@ return {
       version = "v2.*",
       build = "make install_jsregexp",
     },
-    "saadparwaiz1/cmp_luasnip",
-    "rafamadriz/friendly-snippets",
+    {
+      "saadparwaiz1/cmp_luasnip",
+      dependencies = {
+        "rafamadriz/friendly-snippets",
+      },
+    },
     "onsails/lspkind.nvim",
   },
 
@@ -57,10 +61,10 @@ return {
       -- sources for autocompletion
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
-        { name = "nvim_lsp_signature_help" },
-        { name = "luasnip" },
+        { name = "luasnip", option = { show_autosnippets = true } },
         { name = "buffer" },
         { name = "path" },
+        { name = "nvim_lsp_signature_help" },
       }),
       -- configure lspkind for vs-code like icons
       formatting = {
