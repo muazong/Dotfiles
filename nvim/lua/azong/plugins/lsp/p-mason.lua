@@ -29,6 +29,7 @@ return {
         "typos_lsp",
         "clangd",
         "markdown_oxide",
+        "intelephense",
       },
     })
 
