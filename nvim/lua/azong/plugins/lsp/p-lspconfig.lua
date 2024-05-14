@@ -89,7 +89,7 @@ return {
       end,
 
       ["emmet_ls"] = function()
-        lspconfig["emmet_ls"].setup({
+        lspconfig["emmet_language_server"].setup({
           capabilities = capabilities,
           on_attach = on_attach,
           filetypes = {

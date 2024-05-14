@@ -25,7 +25,7 @@ return {
         "html",
         "cssls",
         "lua_ls",
-        "emmet_ls",
+        "emmet_language_server",
         "typos_lsp",
         "clangd",
       },
