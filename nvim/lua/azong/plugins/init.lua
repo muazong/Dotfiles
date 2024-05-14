@@ -31,8 +31,12 @@ return {
   {
     "mbbill/undotree",
     event = "BufReadPre",
-    config = function()
-      vim.keymap.set("n", "<Leader>u", vim.cmd.UndotreeToggle)
-    end,
+    keys = { { "<leader>u", "<cmd>UndotreeToggle<CR>" } },
+  },
+  {
+    "szw/vim-maximizer",
+    keys = {
+      { "<leader>m", "<cmd>MaximizerToggle<CR>" },
+    },
   },
 }

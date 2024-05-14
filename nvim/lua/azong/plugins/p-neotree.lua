@@ -1,15 +1,8 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  event = "VimEnter",
   dependencies = { "nvim-tree/nvim-web-devicons" },
+  keys = { { "<leader>ff", "<cmd>Neotree toggle source=filesystem reveal=true position=left<CR>" } },
   config = function()
-    vim.keymap.set(
-      "n",
-      "<Leader>ff",
-      "<Cmd> Neotree toggle source=filesystem reveal=true position=left<CR>",
-      { silent = true }
-    )
-
     require("neo-tree").setup({
       close_if_last_window = false,
       popup_border_style = "rounded",
