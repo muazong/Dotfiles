@@ -28,6 +28,7 @@ return {
         "emmet_language_server",
         "typos_lsp",
         "clangd",
+        "markdown_oxide",
       },
     })
 
