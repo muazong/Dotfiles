@@ -2,9 +2,9 @@ return {
   "akinsho/bufferline.nvim",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = { "nvim-tree/nvim-web-devicons" },
-  config = function()
-    vim.keymap.set("n", "<Leader>p", "<Cmd> BufferLineTogglePin<CR>", { noremap = true, silent = true })
+  keys = { { "<leader>p", "<Cmd>BufferLineTogglePin<CR>" } },
 
+  config = function()
     require("bufferline").setup({
       options = {
         sort_by = "id",
@@ -17,11 +17,13 @@ return {
         diagnostics = "nvim_lsp",
         diagnostics_update_in_insert = true,
         offsets = {
-          filetype = "neo-tree",
-          text = "󱏒 File Explorer",
-          text_align = "center",
-          highlight = "Directory",
-          separator = true,
+          {
+            filetype = "neo-tree",
+            text = "󱏒 File Explorer",
+            text_align = "center",
+            highlight = "Directory",
+            separator = true,
+          },
         },
         groups = {
           items = {
