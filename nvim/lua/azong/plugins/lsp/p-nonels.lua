@@ -11,7 +11,7 @@ return {
     null_ls.setup({
       sources = {
         -- formatting
-        formatting.prettier,
+        -- formatting.prettier,
         formatting.prettierd,
         formatting.stylua,
         -- formatting.clang_format,

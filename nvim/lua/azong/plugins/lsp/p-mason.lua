@@ -33,7 +33,7 @@ return {
 
     mason_null_ls.setup({
       ensure_installed = {
-        "prettier",
+        -- "prettier",
         "prettierd",
         "stylua",
       },
