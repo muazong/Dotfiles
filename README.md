@@ -27,10 +27,10 @@
 - Plugins:
 
   - Git
-  - [zsh-nvm](https://github.com/lukechilds/zsh-nvm)
+  - [nvm](https://github.com/nvm-sh/nvm)
 
   ```bash
-  git clone https://github.com/lukechilds/zsh-nvm.git ~/.oh-my-zsh/plugins
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
   ```
 
   - [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode)
@@ -44,12 +44,6 @@
 
   ```bash
   git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
-  ```
-
-  - [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
-
-  ```bash
-  git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.oh-my-zsh/plugins/
   ```
 
   - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
@@ -193,7 +187,7 @@
   wget https://www.python.org/downloads/release/python-3122/
 
   # After downloaded Python file
-  ./configure && sudo make install
+  ./configure && sudo make && sudo make install
   ```
 
 - [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)
