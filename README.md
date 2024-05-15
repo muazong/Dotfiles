@@ -6,7 +6,7 @@
 
 ### Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
 
-![Kitty Terminal](./Images/Kitty.png)
+![Kitty Terminal](./images/Kitty.png)
 
 - PPA:
   ```bash
@@ -22,7 +22,7 @@
 
 ### Shell: [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) [- OMZ](https://ohmyz.sh/)
 
-![Zsh - Oh-My-Zsh](./Images/zsh_omz.png)
+![Zsh - Oh-My-Zsh](./images/zsh_omz.png)
 
 - Plugins:
 
@@ -80,7 +80,7 @@
 
 ### File Manager: [Ranger](https://github.com/ranger/ranger)
 
-![Ranger](./Images/ranger.png)
+![Ranger](./images/ranger.png)
 
 - Plugins:
 
@@ -95,7 +95,7 @@
 
 ### Terminal Multiplexer: [Tmux](https://github.com/tmux/tmux/wiki)
 
-![Tmux](./Images/tmux.png)
+![Tmux](./images/tmux.png)
 
 - Plugins:
 
@@ -222,7 +222,7 @@
 
 ### Text Editor: [NeoVim](https://github.com/neovim/neovim)
 
-![Neovim](./Images/nvim.png)
+![Neovim](./images/nvim.png)
 
 - PPA:
 
