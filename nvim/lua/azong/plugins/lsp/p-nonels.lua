@@ -34,6 +34,7 @@ return {
                 filter = function(client)
                   return client.name == "null-ls"
                 end,
+                bufnr = bufnr,
               })
             end,
           })

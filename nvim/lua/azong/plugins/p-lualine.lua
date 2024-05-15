@@ -83,20 +83,20 @@ return {
         },
         lualine_c = {
           {
+            "diagnostics",
+            sources = { "nvim_lsp" },
+            symbols = { error = "󰃤 ", warn = " ", info = "󰋼 ", hint = " " },
+            always_visible = false,
+            update_in_insert = true,
+          },
+        },
+        lualine_x = {
+          {
             "filename",
             path = 1,
             file_status = true,
             newfile_status = true,
             symbols = { modified = "[+]", readonly = "[-]", unnamed = "[No Name]", newfile = "[New]" },
-          },
-        },
-        lualine_x = {
-          {
-            "diagnostics",
-            sources = { "nvim_lsp" },
-            symbols = { error = " ", warn = " ", info = " ", hint = " " },
-            always_visible = false,
-            update_in_insert = true,
           },
         },
         lualine_y = {

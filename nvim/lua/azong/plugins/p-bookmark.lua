@@ -1,6 +1,7 @@
 return {
   "MattesGroeger/vim-bookmarks",
   dependencies = {
+    "nvim-telescope/telescope.nvim",
     "tom-anders/telescope-vim-bookmarks.nvim",
   },
   config = function()

@@ -2,6 +2,10 @@ return {
   "nvim-lua/plenary.nvim",
   "echasnovski/mini.nvim",
   {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim" },
+  },
+  {
     "MunifTanjim/nui.nvim",
     event = "VimEnter",
   },

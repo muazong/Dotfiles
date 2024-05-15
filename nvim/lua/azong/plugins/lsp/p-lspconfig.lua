@@ -14,7 +14,7 @@ return {
     capabilities.textDocument.completion.completionItem.snippetSupport = true
     local mason_lspconfig = require("mason-lspconfig")
 
-    local signs = { Error = "", Warn = "", Hint = "", Info = "" }
+    local signs = { Error = "󰃤", Warn = "", Hint = "", Info = "󰋼" }
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl, linehl = hl })
