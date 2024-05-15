@@ -6,7 +6,7 @@
 
 ### Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
 
-![Kitty Terminal](./images/Kitty.png)
+![Kitty Terminal](./images/kitty.png)
 
 - PPA:
   ```bash
