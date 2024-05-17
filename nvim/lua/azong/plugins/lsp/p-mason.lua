@@ -30,6 +30,7 @@ return {
         "clangd",
         "markdown_oxide",
         "intelephense",
+        "jsonls",
       },
     })
 
