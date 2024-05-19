@@ -27,7 +27,7 @@ return {
     }
 
     -- Set footer
-    dashboard.section.footer.val = { "  Nvim 0.10.0 " }
+    dashboard.section.footer.val = { "  Nvim 0.11.0-dev " }
 
     -- Send config to alpha
     alpha.setup(dashboard.opts)
