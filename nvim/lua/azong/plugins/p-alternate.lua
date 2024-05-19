@@ -1,5 +1,5 @@
 return {
-  "rmagatti/alternate-toggler",
+  --[[ "rmagatti/alternate-toggler",
   event = "BufReadPre",
   config = function()
     vim.keymap.set("n", "<Leader><Leader>", "<Cmd>ToggleAlternate<CR>")
@@ -12,5 +12,5 @@ return {
         ["1"] = "0",
       },
     })
-  end,
+  end, ]]
 }
