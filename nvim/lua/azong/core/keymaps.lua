@@ -78,7 +78,7 @@ map("v", "<S-Tab>", "<gv", opts)
 map("v", "<Tab>", ">gv", opts)
 
 -- Buffer
-map("n", "<C-w>", "<Cmd> bdelete<CR>", opts)
+map("n", "<C-x>", "<Cmd> bd<CR>", opts)
 map("n", "<C-n>", "<Cmd> BufferLineCycleNext<CR>", opts)
 map("n", "<C-p>", "<Cmd> BufferLineCyclePrev<CR>", opts)
 
