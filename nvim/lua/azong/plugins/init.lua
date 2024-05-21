@@ -43,11 +43,6 @@ return {
     config = true,
   },
   {
-    "mbbill/undotree",
-    event = "BufReadPre",
-    keys = { { "<leader>u", "<cmd>UndotreeToggle<CR>" } },
-  },
-  {
     "szw/vim-maximizer",
     keys = {
       { "<leader>m", "<cmd>MaximizerToggle<CR>" },
