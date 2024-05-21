@@ -3,7 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
 
   config = function()
-    local ignore_filetypes = { "neo-tree", "sagaoutline", "lazy" }
+    local ignore_filetypes = { "neo-tree", "sagaoutline", "lazy", "NvimTree" }
     local ignore_buftypes = { "nofile", "prompt", "popup" }
 
     local augroup = vim.api.nvim_create_augroup("FocusDisable", { clear = true })

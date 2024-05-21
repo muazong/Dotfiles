@@ -2,12 +2,13 @@ return {
   "akinsho/bufferline.nvim",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = { "nvim-tree/nvim-web-devicons" },
-  keys = { { "<leader>p", "<Cmd>BufferLineTogglePin<CR>" } },
+  keys = { { "<leader>p", "<cmd>BufferLineTogglePin<cr>" } },
 
   config = function()
     require("bufferline").setup({
       options = {
-        sort_by = "id",
+        mode = "buffers",
+        sort_by = "extension",
         separator_style = "slant",
         show_close_icon = false,
         show_tab_indicators = false,

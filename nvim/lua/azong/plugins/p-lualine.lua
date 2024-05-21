@@ -115,6 +115,7 @@ return {
         "mason",
         "neo-tree",
         "trouble",
+        "nvim-tree",
         "toggleterm",
         "lazy",
       },
