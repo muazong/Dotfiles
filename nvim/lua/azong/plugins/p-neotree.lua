@@ -123,13 +123,16 @@ return {
 
           -- Open keys
           ["<CR>"] = "open",
-          ["<ESC>"] = "cancel",
-          ["<C-c>"] = "cancel",
+          ["w"] = "open",
 
           -- Close keys
           ["C"] = "close_node",
           ["z"] = "close_all_nodes",
           ["q"] = "close_window",
+
+          -- Cancel keys
+          ["<ESC>"] = "cancel",
+          ["<C-c>"] = "cancel",
 
           -- Add
           ["a"] = { "add", config = { show_path = "relative" } }, -- "none", "relative", "absolute"
