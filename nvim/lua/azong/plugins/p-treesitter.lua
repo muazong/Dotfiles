@@ -21,6 +21,7 @@ return {
         "regex",
         "gitignore",
         "git_config",
+        "toml",
       },
       sync_install = false,
       auto_install = true,
