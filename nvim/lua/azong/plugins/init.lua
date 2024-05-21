@@ -38,11 +38,6 @@ return {
     config = true,
   },
   {
-    "axelvc/template-string.nvim",
-    ft = { "js", "jsx", "javascript", "ts", "tsx", "typescript" },
-    config = true,
-  },
-  {
     "folke/todo-comments.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = true,
