@@ -1,6 +1,5 @@
 return {
   "nvim-focus/focus.nvim",
-  version = "*",
   event = { "BufReadPre", "BufNewFile" },
 
   config = function()

@@ -1,6 +1,5 @@
 return {
   "echasnovski/mini.animate",
-  version = false,
   event = { "BufReadPre", "BufNewFile" },
   dependencies = { "echasnovski/mini.nvim" },
   config = function()
