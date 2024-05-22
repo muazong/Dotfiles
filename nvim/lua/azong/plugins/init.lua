@@ -22,6 +22,10 @@ return {
     },
   },
   {
+    "AndrewRadev/tagalong.vim",
+    ft = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
+  },
+  {
     "alvan/vim-closetag",
     ft = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
   },
