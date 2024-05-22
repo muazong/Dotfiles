@@ -22,13 +22,6 @@ return {
     },
   },
   {
-    "AndrewRadev/tagalong.vim",
-    ft = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
-    -- config = function()
-    --   vim.cmd([[inoremap <silent> <c-c> <c-c>:call tagalong#Apply()<cr>]])
-    -- end,
-  },
-  {
     "alvan/vim-closetag",
     ft = { "xml", "html", "js", "jsx", "javascript", "ts", "tsx", "typscript" },
   },
