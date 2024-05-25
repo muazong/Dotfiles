@@ -54,6 +54,10 @@ return {
           behavior = cmp.ConfirmBehavior.Replace,
           select = true,
         }),
+        ["<C-j>"] = cmp.mapping.confirm({
+          behavior = cmp.ConfirmBehavior.Replace,
+          select = true,
+        }),
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({
