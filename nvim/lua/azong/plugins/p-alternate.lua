@@ -17,6 +17,8 @@ return {
         [">"] = "<",
         ["}"] = "{",
         ["]"] = "[",
+        [")"] = "(",
+        ["+"] = "-",
       },
       remove_default_keybinds = true,
       remove_default_inverses = true,
