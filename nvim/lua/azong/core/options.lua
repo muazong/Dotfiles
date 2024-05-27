@@ -81,7 +81,6 @@ opts.iskeyword:append({ "_", "#" })
 -- Scroll
 opts.scrolloff = 8
 opts.sidescrolloff = 8
-opts.smoothscroll = true
 
 -- Auto
 opts.autoread = true
