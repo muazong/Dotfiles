@@ -14,6 +14,7 @@ return {
 
     map("n", "<C-f>", "<CMD>Telescope find_files<CR>", opts)
     map("n", "<C-g>", "<CMD>Telescope live_grep<CR>", opts)
+    map("n", "<C-s>", "<CMD>:Telescope grep_string<CR>", opts)
     map("n", "<C-b>", "<CMD>:Telescope file_browser<CR>", opts)
     map("n", "?", "<CMD>:Telescope help_tags<CR>", opts)
 
