@@ -6,7 +6,7 @@ return {
     require("neo-tree").setup({
       enable_git_status = true,
       enable_diagnostics = true,
-      close_if_last_window = true,
+      close_if_last_window = false,
       sort_case_insensitive = true,
       popup_border_style = "rounded",
       sort_function = nil,
@@ -136,6 +136,9 @@ return {
 
           -- Add
           ["a"] = { "add", config = { show_path = "relative" } }, -- "none", "relative", "absolute"
+
+          -- move
+          ["m"] = { "move", config = { show_path = "relative" } },
 
           -- Delete
           ["d"] = "delete",
