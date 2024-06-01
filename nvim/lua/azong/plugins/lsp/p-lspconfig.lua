@@ -22,7 +22,7 @@ return {
 
     vim.diagnostic.config({
       virtual_text = {
-        prefix = " 󰩃", -- 󰄛 | 󰩃 | ● | 󰝤
+        prefix = "󰄛 ", -- 󰄛 | 󰩃 | ● | 󰝤
       },
       severtity_sort = true,
       update_in_insert = true,
