@@ -13,33 +13,33 @@ return {
       return {
         normal = {
           a = { bg = palette.oldWhite, fg = palette.sumiInk2, gui = "boldItalic" },
-          b = { bg = palette.winterBlue, fg = palette.oldWhite, gui = "bold" },
-          c = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
+          c = { bg = palette.winterBlue, fg = palette.oldWhite, gui = "bold" },
+          b = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
         },
         insert = {
           a = { bg = palette.springGreen, fg = palette.sumiInk2, gui = "boldItalic" },
-          b = { bg = palette.winterBlue, fg = palette.oldWhite, gui = "bold" },
-          c = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
+          c = { bg = palette.winterBlue, fg = palette.oldWhite, gui = "bold" },
+          b = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
         },
         visual = {
           a = { bg = palette.peachRed, fg = palette.winterBlue, gui = "boldItalic" },
-          b = { bg = palette.winterBlue, fg = palette.oldWhite, gui = "bold" },
-          c = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
+          c = { bg = palette.winterBlue, fg = palette.oldWhite, gui = "bold" },
+          b = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
         },
         replace = {
           a = { bg = palette.springBlue, fg = palette.winterBlue, gui = "boldItalic" },
-          b = { bg = palette.winterBlue, fg = palette.fujiWhite, gui = "bold" },
-          c = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
+          c = { bg = palette.winterBlue, fg = palette.fujiWhite, gui = "bold" },
+          b = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
         },
         command = {
           a = { bg = palette.autumnYellow, fg = palette.winterBlue, gui = "boldItalic" },
-          b = { bg = palette.winterBlue, fg = palette.fujiWhite, gui = "bold" },
-          c = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
+          c = { bg = palette.winterBlue, fg = palette.fujiWhite, gui = "bold" },
+          b = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
         },
         inactive = {
           a = { bg = palette.waveAqua1, fg = palette.winterBlue, gui = "boldItalic" },
-          b = { bg = palette.winterBlue, fg = palette.fujiWhite, gui = "bold" },
-          c = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
+          c = { bg = palette.winterBlue, fg = palette.fujiWhite, gui = "bold" },
+          b = { bg = palette.sumiInk1, fg = palette.fujiWhite, gui = "italic" },
         },
       }
     end
