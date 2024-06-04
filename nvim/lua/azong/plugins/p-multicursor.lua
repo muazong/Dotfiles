@@ -1,6 +1,5 @@
 return {
   "brenton-leighton/multiple-cursors.nvim",
-  version = "*",
   opts = {},
   keys = {
     -- {"<C-j>", "<Cmd>MultipleCursorsAddDown<CR>", mode = {"n", "x"}, desc = "Add cursor and move down"},

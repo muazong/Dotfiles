@@ -42,6 +42,24 @@ return {
 
           String = { italic = true },
           SomePluginHl = { fg = colors.theme.syn.type, bold = true },
+
+          TelescopeTitle = { fg = theme.ui.bg_p1, bold = true, bg = "#FF5D62" },
+          TelescopeResultsTitle = { fg = theme.ui.bg_p1, bold = true, bg = "#FF9E3B" },
+          TelescopePreviewTitle = { fg = theme.ui.bg_p1, bold = true, bg = "#98BB6C" },
+
+          TelescopePromptNormal = { bg = theme.ui.bg_p1 },
+          TelescopePromptBorder = { fg = theme.ui.bg_p1, bg = theme.ui.bg_p1 },
+          TelescopeResultsNormal = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m1 },
+          TelescopeResultsBorder = { fg = theme.ui.bg_m1, bg = theme.ui.bg_m1 },
+          TelescopePreviewNormal = { bg = theme.ui.bg_dim },
+          TelescopePreviewBorder = { bg = theme.ui.bg_dim, fg = theme.ui.bg_dim },
+
+          TelescopeResultsDiffAdd = { fg = "#98BB6C" },
+          TelescopeResultsDiffChange = { fg = "#E6C384" },
+          TelescopeResultsDiffDelete = { fg = "#FF5D62" },
+
+          TelescopeMatching = { fg = "#FF9E3B" },
+          TelescopePromptPrefix = { fg = "#DCD7BA" },
         }
       end,
     })
