@@ -1,6 +1,7 @@
 return {
   "nvim-lua/plenary.nvim",
   "echasnovski/mini.nvim",
+  "farmergreg/vim-lastplace",
   {
     "MunifTanjim/nui.nvim",
     event = "VimEnter",
