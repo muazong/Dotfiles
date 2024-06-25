@@ -32,6 +32,9 @@ opts.background = "dark"
 -- Allow cursor to move where there is no text in visual block mode
 opts.virtualedit = "block"
 
+-- Split buffer when replace word
+opts.inccommand = "split"
+
 -- Under curl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])

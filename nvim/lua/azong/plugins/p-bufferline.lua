@@ -7,7 +7,7 @@ return {
   config = function()
     require("bufferline").setup({
       options = {
-        mode = "buffers",
+        mode = "tabs",
         sort_by = "id",
         separator_style = "slant",
         show_close_icon = false,

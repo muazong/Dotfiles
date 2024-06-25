@@ -39,6 +39,7 @@ return {
         -- "prettier",
         "prettierd",
         "stylua",
+        "clang_format",
       },
     })
   end,

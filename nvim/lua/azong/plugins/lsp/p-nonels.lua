@@ -14,7 +14,7 @@ return {
         -- formatting.prettier,
         formatting.prettierd,
         formatting.stylua,
-        -- formatting.clang_format,
+        formatting.clang_format,
 
         -- linter
         diagnostics.tidy, -- html
