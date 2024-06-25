@@ -20,12 +20,18 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl, linehl = hl })
     end
 
-    vim.diagnostic.config({
+    vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+      underline = true,
       virtual_text = {
-        prefix = "󰄛 ", -- 󰄛 | 󰩃 | ● | 󰝤
+        prefix = "󰄛", -- 󰄛 | 󰩃 | ● | 󰝤
+        spacing = 4,
       },
-      severtity_sort = true,
+      ---@diagnostic disable-next-line: unused-local
+      signs = function(namespace, bufnr)
+        return vim.b[bufnr].show_signs == true
+      end,
       update_in_insert = true,
+      severtity_sort = true,
     })
 
     local map = vim.keymap.set
