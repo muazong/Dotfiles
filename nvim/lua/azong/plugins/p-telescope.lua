@@ -68,6 +68,13 @@ return {
         help_tags = {
           initial_mode = "insert",
         },
+        buffers = {
+          previewer = false,
+          layout_config = {
+            width = 0.5,
+            height = 0.6,
+          },
+        },
       },
       -- Extensions
       extensions = {
@@ -82,7 +89,7 @@ return {
           hijack_netrw = true,
           select_buffer = true,
           path = "%:p:h",
-          dir_icon = "",
+          dir_icon = "",
           layout_config = {
             width = 0.7,
             height = 0.8,
