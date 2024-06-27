@@ -68,7 +68,7 @@ return {
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({
-        { name = "luasnip", option = { show_autosnippets = true } },
+        { name = "luasnip", option = { show_autosnippets = true }, priority = 100 },
         { name = "codeium" },
         { name = "nvim_lsp" },
         { name = "buffer" },
@@ -78,9 +78,39 @@ return {
       -- configure lspkind for vs-code like icons
       formatting = {
         format = lspkind.cmp_format({
+          mode = "symbol_text",
           maxwidth = 50,
           ellipsis_char = "...",
-          symbol_map = { Codeium = "" },
+          show_labelDetails = true,
+          show_symbolDetails = true,
+          symbol_map = {
+            Text = "󰉿",
+            Method = "󰆧",
+            Function = "󰊕",
+            Constructor = "",
+            Field = "󰜢",
+            Variable = "󰀫",
+            Class = "󰠱",
+            Interface = "",
+            Module = "󰕳",
+            Property = "",
+            Unit = "󰑭",
+            Value = "󰎠",
+            Enum = "",
+            Keyword = "󰌋",
+            Snippet = "",
+            Color = "󰏘",
+            File = "󰈙",
+            Reference = "󰈇",
+            Folder = "󰉋",
+            EnumMember = "",
+            Constant = "󰏿",
+            Struct = "󰙅",
+            Event = "",
+            Operator = "󰆕",
+            TypeParameter = "",
+            Codeium = "",
+          },
         }),
       },
       experimental = {
@@ -89,7 +119,7 @@ return {
       window = {
         completion = {
           border = "rounded",
-          scrolloff = 3,
+          scrolloff = 5,
           scrollbar = false,
         },
         documentation = {
