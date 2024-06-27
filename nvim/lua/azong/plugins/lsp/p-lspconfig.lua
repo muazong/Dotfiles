@@ -33,14 +33,11 @@ return {
         linehl = mySigns,
         numhl = mySigns,
       },
-    })
-
-    vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-      underline = true,
       virtual_text = {
         prefix = "󰄛", -- 󰄛 | 󰩃 | ● | 󰝤
         spacing = 4,
       },
+      underline = true,
       update_in_insert = true,
       severtity_sort = true,
     })
