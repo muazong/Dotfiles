@@ -25,6 +25,9 @@ plugins=(
 export FZF_DEFAULT_OPS="--extended --layout=reverse"
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
+  export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
+  export FZF_DEFAULT_COMMAND='rg --hidden -l ""'
+  export FZF_DEFAULT_COMMAND='find . ! \( -type d -path ./.git -prune \) ! -type d -printf "%P\n"'
   export FZF_DEFAULT_OPTS='-m --height 80% --border --layout=reverse --preview "batcat --color=always {} | less"'
 fi
 
