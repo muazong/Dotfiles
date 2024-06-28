@@ -44,12 +44,20 @@ return {
         end,
       },
       mapping = cmp.mapping.preset.insert({
-        ["<S-Tab>"] = cmp.mapping.select_prev_item(),
+        ["<S-Tab>"] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_prev_item()
+          elseif require("luasnip").jumpable(-1) then
+            vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>luasnip-jump-prev", true, true, true), "")
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
-          elseif luasnip.expand_or_locally_jumpable() then
-            luasnip.expand_or_jump()
+          elseif require("luasnip").expand_or_jumpable() then
+            vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>luasnip-expand-or-jump", true, true, true), "")
           else
             fallback()
           end
@@ -57,15 +65,12 @@ return {
 
         ["<C-u>"] = cmp.mapping.scroll_docs(-4),
         ["<C-d>"] = cmp.mapping.scroll_docs(4),
+
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-e>"] = cmp.mapping.abort(),
-        ["<CR>"] = cmp.mapping.confirm({
-          -- behavior = cmp.ConfirmBehavior.Replace,
-          select = true,
-        }),
-        ["<C-j>"] = cmp.mapping.confirm({
-          select = true,
-        }),
+
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        ["<C-j>"] = cmp.mapping.confirm({ select = true }),
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({

@@ -75,7 +75,6 @@ return {
       -- Extensions
       extensions = {
         file_browser = {
-          theme = "dropdown",
           initial_mode = "normal",
           hidden = true,
           grouped = true,
@@ -86,7 +85,9 @@ return {
           select_buffer = true,
           path = "%:p:h",
           dir_icon = "",
+          sorting_strategy = "ascending",
           layout_config = {
+            horizontal = { prompt_position = "top" },
             width = 0.7,
             height = 0.8,
           },
