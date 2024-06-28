@@ -70,10 +70,6 @@ return {
         },
         buffers = {
           previewer = false,
-          layout_config = {
-            width = 0.5,
-            height = 0.6,
-          },
         },
       },
       -- Extensions

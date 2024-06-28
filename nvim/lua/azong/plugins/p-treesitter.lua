@@ -24,6 +24,7 @@ return {
         "toml",
         "html",
         "css",
+        "scss",
       },
       sync_install = false,
       auto_install = true,

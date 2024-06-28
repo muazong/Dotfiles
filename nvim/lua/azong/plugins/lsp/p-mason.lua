@@ -31,6 +31,7 @@ return {
         "markdown_oxide",
         "intelephense",
         "jsonls",
+        "somesass_ls",
       },
     })
 
