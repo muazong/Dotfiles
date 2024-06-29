@@ -68,10 +68,7 @@ return {
         },
         lualine_b = {
           { "branch", icon = "" },
-          {
-            "diff",
-            symbols = { added = " ", modified = " ", removed = " " },
-          },
+          { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
         },
         lualine_c = {
           {
@@ -92,7 +89,7 @@ return {
           },
         },
         lualine_y = {
-          "filetype",
+          { "diff", symbols = { added = " ", modified = " ", removed = " " } },
           "progress",
         },
         lualine_z = {

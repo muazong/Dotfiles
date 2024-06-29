@@ -19,11 +19,11 @@ return {
         groups = {
           InclineNormal = {
             default = true,
-            group = "NormalFloat",
+            group = "WarningMsg",
           },
           InclineNormalNC = {
             default = true,
-            group = "FloatBorder",
+            group = "NormalFloat",
           },
         },
       },
@@ -38,7 +38,10 @@ return {
         local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ":t")
         if filename == "" then
           filename = "[No Name]"
+        elseif vim.bo[props.buf].modified then
+          filename = "[+] " .. filename
         end
+
         local ft_icon, ft_color = devicons.get_icon_color(filename)
         local modified = vim.bo[props.buf].modified
         return {
