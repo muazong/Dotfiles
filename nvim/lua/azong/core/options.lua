@@ -23,6 +23,7 @@ opts.writebackup = false
 
 -- Encoding of Unicode
 opts.encoding = "utf-8"
+opts.fileencoding = "utf-8"
 vim.scriptencoding = "utf-8"
 
 -- Color
