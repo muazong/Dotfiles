@@ -103,7 +103,7 @@ alias n='nvim'
 alias nv='nvim'
 alias vim='nvim --clean'
 alias vi='nvim --clean'
-alias nvc='cd ~/.Dotfiles/nvim && nvim init.lua'
+alias nvc='cd ~/.config/nvim && nvim init.lua'
 
 # Tmux
 alias tm='tmux'

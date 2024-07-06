@@ -56,7 +56,7 @@ return {
       pickers = {
         find_files = {
           previewer = false,
-          hidden = true,
+          hidden = false,
           no_ignore = true,
           no_ignore_parent = true,
           initial_mode = "insert",
