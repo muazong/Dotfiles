@@ -2,7 +2,6 @@ return {
   "akinsho/bufferline.nvim",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = { "nvim-tree/nvim-web-devicons" },
-  keys = { { "<leader>p", "<cmd>BufferLineTogglePin<cr>" } },
 
   config = function()
     require("bufferline").setup({
@@ -28,7 +27,7 @@ return {
         },
         groups = {
           items = {
-            require("bufferline.groups").builtin.pinned:with({ icon = " " }),
+            require("bufferline.groups").builtin.pinned:with({ icon = " " }),
           },
         },
         custom_areas = {

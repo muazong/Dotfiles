@@ -42,6 +42,7 @@ return {
     })
 
     local map = vim.keymap.set
+    ---@diagnostic disable-next-line: unused-local
     local on_attach = function(client, bufnr)
       local opts = { noremap = true, silent = true, buffer = bufnr }
       map("n", "gf", "<cmd>Lspsaga finder<CR>", opts) -- show definition, references
@@ -52,13 +53,7 @@ return {
       map("n", "gp", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
       map("n", "gn", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
       map("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
-      map("n", "<leader>o", "<cmd>Lspsaga outline<CR>", opts) -- see outline on right hand side
-
-      if client.name == "tsserver" then
-        map("n", "<leader>rf", ":TypescriptRenameFile<CR>") -- rename file and update imports
-        map("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports
-        map("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables
-      end
+      map("n", "<leader>ol", "<cmd>Lspsaga outline<CR>", opts) -- see outline on right hand side
     end
 
     mason_lspconfig.setup_handlers({
