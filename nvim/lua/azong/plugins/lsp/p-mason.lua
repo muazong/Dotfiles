@@ -41,6 +41,7 @@ return {
         "prettierd",
         "stylua",
         "clang_format",
+        "shfmt",
       },
     })
   end,

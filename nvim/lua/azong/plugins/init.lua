@@ -32,11 +32,6 @@ return {
     config = true,
   },
   {
-    "folke/todo-comments.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    config = true,
-  },
-  {
     "szw/vim-maximizer",
     keys = {
       { "<leader>m", "<cmd>MaximizerToggle<CR>" },
