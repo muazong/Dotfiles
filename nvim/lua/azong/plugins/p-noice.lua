@@ -61,7 +61,14 @@ return {
       {
         filter = {
           event = "notify",
-          find = "No information available",
+          find = "No information available", -- Hover doc message
+        },
+        opts = { skip = true },
+      },
+      {
+        filter = {
+          event = "notify",
+          find = "unsupported value.", -- Alternate message
         },
         opts = { skip = true },
       },

@@ -80,7 +80,7 @@ opts.copyindent = true
 opts.backspace = "indent,eol,start"
 
 -- Keywords
-opts.iskeyword:append({ "_", "#" })
+opts.iskeyword:append({ "_" })
 
 -- Scroll
 opts.scrolloff = 8
