@@ -59,7 +59,7 @@ return {
           TelescopeResultsDiffDelete = { fg = "#FF5D62" },
 
           TelescopeMatching = { fg = "#FF9E3B" },
-          TelescopePromptPrefix = { fg = "#DCD7BA" },
+          TelescopePromptPrefix = { fg = "#E46876" },
         }
       end,
     })
