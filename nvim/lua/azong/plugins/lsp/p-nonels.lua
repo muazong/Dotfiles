@@ -16,6 +16,8 @@ return {
         formatting.stylua,
         formatting.clang_format,
         formatting.shfmt,
+        formatting.black,
+        -- formatting.isort,
 
         -- linter
         diagnostics.tidy, -- html

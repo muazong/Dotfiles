@@ -5,7 +5,7 @@ local opts = { silent = true, noremap = true }
 vim.g.mapleader = " "
 
 -- Lazy
-map("n", "<Leader>lz", "<Cmd> Lazy<CR>", opts)
+map("n", "<Leader>ll", "<Cmd> Lazy<CR>", opts)
 
 -- Command
 map("n", ";", ":")

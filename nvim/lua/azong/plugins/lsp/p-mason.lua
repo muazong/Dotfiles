@@ -28,10 +28,11 @@ return {
         "emmet_language_server",
         "typos_lsp",
         "clangd",
+        "pyright",
         "markdown_oxide",
-        "intelephense",
         "jsonls",
         "somesass_ls",
+        "css_variables",
       },
     })
 
@@ -42,6 +43,8 @@ return {
         "stylua",
         "clang_format",
         "shfmt",
+        "black",
+        "isort",
       },
     })
   end,

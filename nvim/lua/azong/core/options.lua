@@ -95,6 +95,10 @@ opts.autoindent = true
 opts.spell = false
 opts.spelllang = "en_us"
 
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Fold
 opts.foldenable = false
 opts.foldmethod = "indent"

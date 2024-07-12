@@ -1,11 +1,7 @@
 return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
-  dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-    { "antosha417/nvim-lsp-file-operations", config = true },
-  },
-
+  dependencies = { "williamboman/mason-lspconfig.nvim" },
   config = function()
     local lspconfig = require("lspconfig")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -53,7 +49,7 @@ return {
       map("n", "gp", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
       map("n", "gn", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
       map("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
-      map("n", "<leader>ol", "<cmd>Lspsaga outline<CR>", opts) -- see outline on right hand side
+      map("n", "<leader>o", "<cmd>Lspsaga outline<CR>", opts) -- see outline on right hand side
     end
 
     mason_lspconfig.setup_handlers({

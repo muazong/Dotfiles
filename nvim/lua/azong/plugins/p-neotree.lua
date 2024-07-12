@@ -1,6 +1,10 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "nvim-tree/nvim-web-devicons",
+    "MunifTanjim/nui.nvim",
+  },
   keys = { { "<leader>ff", "<cmd>Neotree toggle source=filesystem reveal=true position=left<CR>" } },
   config = function()
     require("neo-tree").setup({
