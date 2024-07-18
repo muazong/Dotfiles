@@ -1,10 +1,11 @@
 return {
   "rcarriga/nvim-notify",
+  enabled = false,
   dependencies = {
     "folke/noice.nvim",
   },
   opts = {
-    timeout = 3000,
+    timeout = 1000,
     fps = 60,
     level = 2,
     render = "wrapped-compact",

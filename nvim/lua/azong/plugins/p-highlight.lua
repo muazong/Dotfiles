@@ -16,7 +16,7 @@ return {
         hsl_fn = true,
         css = true,
         css_fn = true,
-        mode = "background",
+        mode = "background", -- foreground | background | virtualtext
         tailwind = true,
         sass = { enable = true, parsers = { "css" } },
         virtualtext = "■",

@@ -26,13 +26,13 @@ return {
     on_attach = nil,
   },
   config = function()
-    vim.keymap.set("n", "[c", function()
+    vim.keymap.set("n", "<S-z>", function()
       require("treesitter-context").go_to_context(vim.v.count1)
     end, { silent = true })
 
     vim.cmd([[
-      hi TreesitterContextBottom gui=underline guisp=Grey
-      hi TreesitterContextLineNumberBottom gui=underline guisp=Grey
+      hi TreesitterContextBottom gui=underline guisp=#E6C384
+      hi TreesitterContextLineNumberBottom gui=underline guisp=#E6C384
     ]])
   end,
 }

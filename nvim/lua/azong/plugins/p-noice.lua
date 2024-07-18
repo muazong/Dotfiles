@@ -72,6 +72,13 @@ return {
         },
         opts = { skip = true },
       },
+      {
+        filter = {
+          event = "notify",
+          find = "completion request failed", -- Codeium message
+        },
+        opts = { skip = true },
+      },
     },
   },
 }

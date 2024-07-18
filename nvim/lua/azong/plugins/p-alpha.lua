@@ -24,6 +24,7 @@ return {
       dashboard.button("f", "󰱼 󱦰 Find File", "<cmd>Telescope find_files<CR>"),
       dashboard.button("g", " 󱦰 Find Word", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("l", "󰒲 󱦰 Lazy", "<cmd>Lazy<CR>"),
+      dashboard.button("c", " 󱦰 LeetCode", "<cmd>Leet<CR>"),
       dashboard.button("q", " 󱦰 Quit", "<cmd>qa<CR>"),
     }
 

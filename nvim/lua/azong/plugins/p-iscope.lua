@@ -4,5 +4,5 @@ return {
   dependencies = {
     "echasnovski/mini.nvim",
   },
-  opts = { symbol = "│" },
+  opts = { symbol = "" },
 }
