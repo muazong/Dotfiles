@@ -1,5 +1,6 @@
 return {
   "williamboman/mason.nvim",
+  build = ":MasonUpdate",
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "jayp0521/mason-null-ls.nvim",
@@ -28,7 +29,7 @@ return {
         "emmet_language_server",
         "typos_lsp",
         "clangd",
-        "pyright",
+        -- "pyright",
         "markdown_oxide",
         "jsonls",
         "somesass_ls",
@@ -43,8 +44,8 @@ return {
         "stylua",
         "clang_format",
         "shfmt",
-        "black",
-        "isort",
+        -- "black",
+        -- "isort",
       },
     })
   end,

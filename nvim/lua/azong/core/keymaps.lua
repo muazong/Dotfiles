@@ -56,8 +56,8 @@ map({ "n", "x" }, "k", "v:count || mode(1)[0:1] == 'no' ? 'k' : 'gk'", { expr = 
 vim.cmd([[map <C-space> %]])
 
 -- Move line up/down
-map("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
-map("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
+map("v", "<S-j>", ":m '>+1<CR>gv=gv", opts)
+map("v", "<S-k>", ":m '<-2<CR>gv=gv", opts)
 
 -- Move keys
 map({ "i", "c" }, "<A-h>", "<Left>")

@@ -24,7 +24,7 @@ opts.writebackup = false
 -- Encoding of Unicode
 opts.encoding = "utf-8"
 opts.fileencoding = "utf-8"
-vim.scriptencoding = "utf-8"
+-- vim.scriptencoding = "utf-8"
 
 -- Color
 opts.termguicolors = true
@@ -35,10 +35,6 @@ opts.virtualedit = "block"
 
 -- Split buffer when replace word
 opts.inccommand = "split"
-
--- Under curl
-vim.cmd([[let &t_Cs = "\e[4:3m"]])
-vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 -- History
 opts.history = 30
@@ -145,36 +141,3 @@ vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
-
--- Disable auto comment
-vim.cmd([[
-  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-]])
-
--- Rebember folds
-vim.cmd([[ 
-  augroup remember_folds
-    autocmd!
-    autocmd BufWinLeave *.* if &ft !=# 'help' | mkview | endif
-    autocmd BufWinEnter *.* if &ft !=# 'help' | silent! loadview | endif
-  augroup END
-]])
-
--- Highlight on yank
-vim.api.nvim_create_autocmd("TextYankPost", {
-  callback = function()
-    vim.highlight.on_yank({
-      higroup = "IncSearch",
-      timeout = 200,
-    })
-  end,
-})
-
--- Resize splits if window got resized
-vim.api.nvim_create_autocmd({ "VimResized" }, {
-  callback = function()
-    local current_tab = vim.fn.tabpagenr()
-    vim.cmd("tabdo wincmd =")
-    vim.cmd("tabnext " .. current_tab)
-  end,
-})

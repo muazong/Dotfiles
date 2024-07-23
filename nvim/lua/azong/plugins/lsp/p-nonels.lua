@@ -5,7 +5,6 @@ return {
     local null_ls = require("null-ls")
     local formatting = null_ls.builtins.formatting
     local diagnostics = null_ls.builtins.diagnostics
-    local completion = null_ls.builtins.completion
     local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
     null_ls.setup({
@@ -16,14 +15,11 @@ return {
         formatting.stylua,
         formatting.clang_format,
         formatting.shfmt,
-        formatting.black,
+        -- formatting.black,
         -- formatting.isort,
 
         -- linter
         diagnostics.tidy, -- html
-
-        -- completion
-        --[[ completion.spell, ]]
       },
       debug = false,
       on_attach = function(current_client, bufnr)

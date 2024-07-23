@@ -1,29 +1,31 @@
 return {
   "NStefan002/screenkey.nvim",
-  lazy = false,
-  opts = {
-    version = "*",
-  },
+  event = { "BufReadPre", "BufNewFile" },
   config = function()
     require("screenkey").setup({
       win_opts = {
-        row = vim.o.cmdheight + 1,
-        col = vim.o.columns - 1,
+        -- row = vim.o.cmdheight + 27,
+        row = vim.o.lines - 4,
+        col = vim.o.columns,
         relative = "editor",
-        anchor = "NE",
+        anchor = "NE", -- SE
         width = 20,
         height = 1,
         border = "rounded",
         title = "",
+        zindex = 1000,
+        style = "minimal",
+        focusable = false,
+        noautocmd = true,
       },
-      compress_after = 2,
-      clear_after = 5,
+      compress_after = 3,
+      clear_after = 3,
       disable = {
         filetypes = {},
         buftypes = {},
       },
       show_leader = true,
-      group_mappings = false,
+      group_mappings = true,
       display_infront = {},
       display_behind = {},
       keys = {
