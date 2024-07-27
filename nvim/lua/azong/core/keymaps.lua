@@ -80,8 +80,6 @@ map("v", "<Tab>", ">gv", opts)
 -- Buffer
 map("n", "<C-x>", "<Cmd> bd<CR>", opts)
 map("n", "te", "<Cmd> tabnew<CR>", opts)
-map("n", "<C-n>", "<Cmd> BufferLineCycleNext<CR>", opts)
-map("n", "<C-p>", "<Cmd> BufferLineCyclePrev<CR>", opts)
 
 -- Split windows
 map("n", "<Leader>ss", "<Cmd> split<CR>", opts)

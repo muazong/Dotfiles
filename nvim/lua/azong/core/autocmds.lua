@@ -1,9 +1,3 @@
--- Treesitter Context bottom underline
-vim.cmd([[
-  hi TreesitterContextBottom gui=underline guisp=#E6C384
-  hi TreesitterContextLineNumberBottom gui=underline guisp=#E6C384
-]])
-
 -- Under curl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
@@ -29,15 +23,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
       higroup = "IncSearch",
       timeout = 200,
     })
-  end,
-})
-
--- Resize splits if window got resized
-vim.api.nvim_create_autocmd({ "VimResized" }, {
-  callback = function()
-    local current_tab = vim.fn.tabpagenr()
-    vim.cmd("tabdo wincmd =")
-    vim.cmd("tabnext " .. current_tab)
   end,
 })
 

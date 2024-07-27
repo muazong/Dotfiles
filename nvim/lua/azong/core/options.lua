@@ -1,56 +1,15 @@
 local opts = vim.opt
 
-opts.filetype = "on"
+-- File type
+opts.filetype = 'on'
 
 -- Shell
-opts.shell = "zsh"
+opts.shell = 'zsh'
 
--- Clipboard
+-- Clipboard option
 opts.clipboard:append("unnamedplus")
 
--- Confirm to save
-opts.confirm = true
-
--- Undo setup
-opts.undofile = true
-
--- Swap file
-opts.swapfile = false
-
--- Backup file
-opts.backup = false
-opts.writebackup = false
-
--- Encoding of Unicode
-opts.encoding = "utf-8"
-opts.fileencoding = "utf-8"
--- vim.scriptencoding = "utf-8"
-
--- Color
-opts.termguicolors = true
-opts.background = "dark"
-
--- Allow cursor to move where there is no text in visual block mode
-opts.virtualedit = "block"
-
--- Split buffer when replace word
-opts.inccommand = "split"
-
--- History
-opts.history = 30
-
--- Show match
-opts.showmatch = true
-
--- List & title
-opts.list = true
-opts.title = true
-
--- Time set
-opts.updatetime = 50
-opts.timeoutlen = 800
-
--- Line
+-- Line options
 opts.number = true
 opts.cursorline = true
 opts.breakindent = true
@@ -61,6 +20,41 @@ opts.wrap = false
 opts.textwidth = 80
 opts.colorcolumn = "0"
 opts.signcolumn = "yes"
+
+-- Confirm to save
+opts.confirm = true
+
+-- Undo setup
+opts.undofile = true
+
+-- Disable swap file
+opts.swapfile = false
+
+-- Disable backup
+opts.backup = false
+opts.writebackup = false
+
+-- Encoding of Unicode
+opts.encoding = "utf-8"
+opts.fileencoding = "utf-8"
+-- vim.scriptencoding = "utf-8"
+
+-- Color options
+opts.termguicolors = true
+opts.background = "dark"
+
+-- Allow cursor to move where there is no text in visual block mode
+opts.virtualedit = "block"
+
+-- Split buffer when replace word
+opts.inccommand = "split"
+
+-- History size
+opts.history = 30
+
+-- Time set
+opts.updatetime = 50
+opts.timeoutlen = 800
 
 -- Tab & indent
 opts.tabstop = 2
@@ -78,48 +72,32 @@ opts.backspace = "indent,eol,start"
 -- Keywords
 opts.iskeyword:append({ "_" })
 
--- Scroll
+-- Scroll options
 opts.scrolloff = 8
 opts.sidescrolloff = 8
 
--- Auto
+-- Auto setup
 opts.autoread = true
 opts.autowrite = true
 opts.autoindent = true
 
--- Spell check
-opts.spell = false
-opts.spelllang = "en_us"
-
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
--- Fold
+-- Fold options
 opts.foldenable = false
 opts.foldmethod = "indent"
 opts.foldlevel = 99
 opts.foldlevelstart = 99
 opts.foldcolumn = "0"
 
--- Status
-opts.cmdheight = 1
-opts.showcmd = false
-opts.showmode = true
-opts.showtabline = 0
-opts.laststatus = 3
-opts.wildmode = "longest:full,full"
-
 -- Complete options
 opts.completeopt = "menuone,noinsert,noselect"
 
--- Search
+-- Search options
 opts.ignorecase = true
 opts.infercase = true
 opts.smartcase = true
 opts.hlsearch = true
 
--- Split windows
+-- Split window options
 opts.splitright = true
 opts.splitbelow = true
 
