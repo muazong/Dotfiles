@@ -269,6 +269,12 @@ curl https://sh.rustup.rs -sSf | sh
 npm install -g yarn
 ```
 
+12. Julia
+
+```bash
+curl -fsSL https://install.julialang.org | sh
+```
+
 ### Text editor: Neovim - config with lua
 
 **_Note:_** You can still download my own neovim configurations here without downloading the entire Dotfiles.
