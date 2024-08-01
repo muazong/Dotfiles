@@ -17,9 +17,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
 	git
 	zsh-vi-mode
-  fzf-zsh-plugin 
-  zsh-autosuggestions
-  zsh-syntax-highlighting
+ fzf-zsh-plugin 
+ zsh-autosuggestions
+ zsh-syntax-highlighting
 )
 
 export FZF_DEFAULT_OPS="--extended --layout=reverse"
@@ -34,9 +34,9 @@ fi
 # nvm
 export NVM_DIR="$HOME/.nvm"
 nvm() {
-  unset -f nvm
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-  nvm $@ # This copies arguments after nvm
+ unset -f nvm
+ [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+ nvm $@ # This copies arguments after nvm
 }
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -52,24 +52,18 @@ export PATH=$PATH:/usr/local/go/bin
 # !! Contents within this block are managed by juliaup !!
 
 case ":$PATH:" in
-    *:/home/azong/.juliaup/bin:*)
-        ;;
+   *:/home/azong/.juliaup/bin:*)
+       ;;
 
-    *)
-        export PATH=/home/azong/.juliaup/bin${PATH:+:${PATH}}
-        ;;
+   *)
+       export PATH=/home/azong/.juliaup/bin${PATH:+:${PATH}}
+       ;;
 esac
 
 # <<< juliaup initialize <<<
 
 # Vi mode
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
-
-# Yarn
-export PATH="$HOME/.local/bin:\
-$HOME/.yarn/bin:\
-$HOME/.config/yarn/global/node_modules/.bin:\
-$PATH"
 
 # Zoxide
 eval "$(zoxide init zsh)"
@@ -111,7 +105,7 @@ alias neo='neofetch'
 alias neoconf='nvim ~/.config/neofetch/config.conf'
 
 # Kitty terminal
-# alias kittyconf='nvim ~/.Dotfiles/kitty/kitty.conf'
+alias kittyconf='nvim ~/.config/kitty/kitty.conf'
 
 # Colorls
 alias ls='colorls'

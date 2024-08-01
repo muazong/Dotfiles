@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+current_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 battery="$current_dir/battery.sh"
 time="%I:%M %p"
 
@@ -35,14 +35,14 @@ pane_active=$carpYellow
 message_fg=$session_bg
 message_bg=$session_fg
 
-time_bg=$bar_bg
-time_fg=$session_fg
+time_bg=$carpYellow
+time_fg=$sumilnk2
 battery_bg=$katanaGray
 battery_fg=$bar_bg
 
 tmux set-window-option -g window-status-activity-style "bold"
 tmux set-window-option -g window-status-bell-style "bold"
-tmux set-option -g status-style "fg=$session_fg,bg=${bar_bg},bold,italics"
+tmux set-option -g status-style "fg=${session_fg},bg=${bar_bg},bold,italics"
 tmux set-option -g message-style "fg=${message_fg},bg=${message_bg}"
 tmux set-option -g pane-active-border-style "fg=${pane_active}"
 tmux set-option -g pane-border-style "fg=${pane_inactive}"
@@ -58,8 +58,8 @@ tmux set-window-option -g window-status-current-format "#[fg=${bar_bg}]${left_se
 tmux set-window-option -g window-status-format "#[fg=${bar_bg}]#{?window_last_flag,,#[bg=${window_inactive_bg}]}${left_sep}#{?window_last_flag,,#[fg=${window_inactive_fg}]}#{?window_last_flag,,#[bg=$window_inactive_bg,]} #I #{?window_last_flag,#[bold],#[italics,nobold]}#W ${flags} #{?window_last_flag,#[fg=${window_last_bg}],#[fg=${window_inactive_bg}]}#[bg=${bar_bg}]${left_sep}"
 
 tmux set-option -g status-right "#[bg=${bar_bg},noitalics,nobold]"
-# if [[ $($battery) != "0" ]]; then
-#   tmux set-option -ga status-right "#[fg=${battery_bg}]${right_sep}#[fg=${battery_fg},bg=${battery_bg}] #($battery) #[fg=${time_bg}]${right_sep}#[fg=${time_fg},bg=${time_bg}] $time "
-# else
-  tmux set-option -ga status-right "#[[fg=${time_fg},bg=${time_bg}] $time "
-# fi
+if [[ $($battery) != "0" ]]; then
+	tmux set-option -ga status-right "#[fg=${battery_bg}]${right_sep}#[fg=${battery_fg},bg=${battery_bg}] #($battery) #[fg=${time_bg}]${right_sep}#[fg=${time_fg},bg=${time_bg}] #[bold] $time "
+else
+	tmux set-option -ga status-right "#[[fg=${time_fg},bg=${time_bg}]] $time "
+fi
