@@ -269,7 +269,7 @@ curl https://sh.rustup.rs -sSf | sh
 npm install -g yarn
 ```
 
-### Text editor: Neovim
+### Text editor: Neovim - config with lua
 
 **_Note:_** You can still download my own neovim configurations here without downloading the entire Dotfiles.
 
