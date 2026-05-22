@@ -3,7 +3,7 @@
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init bash)"
 
-export OSH=~/.oh-my-bash
+export OSH='/home/azong/.oh-my-bash'
 OSH_THEME="font"
 OMB_USE_SUDO=true
 completions=(git composer ssh)
