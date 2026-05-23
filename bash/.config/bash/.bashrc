@@ -2,6 +2,9 @@
 
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init bash)"
+export ANDROID_HOME=$HOME/android-sdk
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export OSH='/home/azong/.oh-my-bash'
 OSH_THEME="font"
